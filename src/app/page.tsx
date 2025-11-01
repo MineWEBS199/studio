@@ -1,23 +1,12 @@
-import TriviaGame from '@/components/trivia-game';
-import { BrainCircuit } from 'lucide-react';
-
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-4 sm:p-8 md:p-12 bg-background">
-      <div className="w-full max-w-4xl mx-auto">
-        <header className="mb-8 text-center">
-          <div className="inline-flex items-center gap-4 mb-2">
-            <BrainCircuit className="h-12 w-12 text-primary" />
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-headline font-bold text-foreground">
-              Trivia Master
-            </h1>
-          </div>
-          <p className="text-lg text-muted-foreground">
-            Pon a prueba tu conocimiento de cultura general.
-          </p>
-        </header>
-        <TriviaGame />
-      </div>
+    <main style={{ padding: '2rem', textAlign: 'center', background: '#f0f0f0', minHeight: '100vh' }}>
+      <h1>🌟 Trivia Master</h1>
+      <p>¡Bienvenido a tu juego de trivia! Responde preguntas y gana puntos.</p>
+      <button style={{ padding: '10px 20px', fontSize: '1.2rem', background: '#007bff', color: 'white', border: 'none', borderRadius: '5px' }}>
+        Empezar Trivia
+      </button>
+      {/* Aquí puedes agregar más componentes, como un formulario de preguntas */}
     </main>
   );
 }
